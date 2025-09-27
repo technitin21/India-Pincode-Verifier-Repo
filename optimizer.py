@@ -1,5 +1,5 @@
-from ortools.graph import pywrapgraph
 from utils import geocode_pincode
+from ortools.graph.pywrapgraph import SimpleMinCostFlow
 
 def optimize_assignment(customers, employees, dist_fn):
     start_nodes, end_nodes, capacities, unit_costs = [], [], [], []
