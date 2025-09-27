@@ -18,7 +18,7 @@ if role == "Admin":
     customers = get_customers()
 
     if st.button("Assign Tasks"):
-        if mode == "Optimized (OR-Tools)"):
+        if mode == "Optimized (OR-Tools)":
             assignments = optimize_assignment(customers, employees, haversine_distance)
         else:
             assignments = assign_customers(customers, employees)
